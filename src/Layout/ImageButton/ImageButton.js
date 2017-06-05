@@ -10,8 +10,6 @@ export default class ImageButton extends React.Component{
     this.mouseOut = this.mouseOut.bind(this)
     this.mouseOver = this.mouseOver.bind(this)
 }
-
-
   mouseOut(){
     this.setState({brightness:"brightness(65%)"})
   }
