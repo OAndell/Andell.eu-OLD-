@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 
 //TODO: Backgrundsbild??
 export default class Header extends React.Component {
+	constructor(props){
+		super(props)
+	}
+	
   render() {
 	var headerBackgroundStyle = {
-	
-		background: 'linear-gradient(to bottom right, black, rgb(55, 55, 55))',
+		background: 'linear-gradient(to bottom right, black, rgb(70, 70, 70))',
 		lineHeight: '70%',
 		margin: 'auto',
 		height: '125px',
@@ -17,17 +20,15 @@ export default class Header extends React.Component {
 		color:'White',
 		float: 'right',
 		margin: '20px',
-		fontFamily: 'Ubuntu-sansSerif'
 	}
 		
     return(
-		<div className="header" style={headerBackgroundStyle}>
+		<div style={headerBackgroundStyle}>
 			<br/>
 			<div style={textStyle}>
-				<h1>Header Text</h1>
-				<p>some text</p>
+				<h1>{this.props.largeText}</h1>
+				<p>{this.props.smallText}</p>
 			</div>
-			
 		</div>
 	);
   }
