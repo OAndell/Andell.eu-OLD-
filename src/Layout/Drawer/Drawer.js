@@ -16,7 +16,9 @@ export default class Drawer extends React.Component{
     this.openDrawer = this.openDrawer.bind(this)
     this.closeDrawer = this.closeDrawer.bind(this)
     this.tick =  this.tick.bind(this)
+    this.negtick =  this.negtick.bind(this)
     this.start = this.start.bind(this)
+    this.negstart = this.negstart.bind(this)
     this.getChars = this.getChars.bind(this)
 
   }
@@ -25,11 +27,14 @@ export default class Drawer extends React.Component{
   getChars(str){
     var x = Math.floor(this.maxWidth/str.length)
     this.setState({homeButtonText2:this.maxWidth/(str.length-1)})
-    return (str.substring(0, Math.floor((this.state.Width-25)/x)))
+    return (str.substring(0, Math.floor((this.state.Width-50)/x)))
   }
 
   start(){
     this.interval = setInterval(this.tick, 20)
+  }
+  negstart(){
+    this.interval = setInterval(this.negtick, 20)
   }
   stop(){
       clearInterval(this.interval)
@@ -50,16 +55,28 @@ export default class Drawer extends React.Component{
     })
 
   }
+  negtick(){
+    if (this.state.Width <= 50){
+      this.stop()
+      this.setState({
+        drawerText:"D",
+        homeButtonText:""
+        })
+      return null
+    }
+    this.setState({
+      Width:this.state.Width - 10,
+      drawerText:"D"+ this.getChars(this.drawerTitle),
+      homeButtonText:this.getChars(this.homeButtonText)
+    })
+
+  }
   openDrawer(){
     this.start()
   }
   closeDrawer(){
     this.stop()
-    this.setState({
-      Width:50,
-      drawerText:"D",
-      homeButtonText:""
-     })
+    this.negstart()
   }
 
 
@@ -85,7 +102,7 @@ export default class Drawer extends React.Component{
     var textStyle = {float:"left",paddingLeft:"0", paddingRight:"0", paddingTop:"13", paddingBottom:"5", lineHeight:"0%", lineWidth:"0%"}
 
     return(
-      <div style = {drawerStyle} onMouseOver={this.openDrawer} onMouseOut={this.closeDrawer}>
+      <div style = {drawerStyle} onMouseEnter={this.openDrawer} onMouseOut={this.closeDrawer}>
         <h1>{this.state.drawerText} </h1>
 
         <div style={divStyle}>
