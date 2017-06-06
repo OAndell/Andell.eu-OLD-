@@ -27,7 +27,7 @@ export default class Drawer extends React.Component{
   getChars(str){
     var x = Math.floor(this.maxWidth/str.length)
     this.setState({homeButtonText2:this.maxWidth/(str.length-1)})
-    return (str.substring(0, Math.floor((this.state.Width-50)/x)))
+    return (str.substring(0, Math.floor((this.state.Width-40)/x)))
   }
 
   start(){
@@ -84,7 +84,8 @@ export default class Drawer extends React.Component{
     var drawerStyle = {
       height:"100vh",
       width:this.state.Width,
-      backgroundColor:"red"}
+      background: 'linear-gradient(to bottom right, black, rgb(80, 80, 80))',
+    }
 
     var buttonStyle = {
       paddingTop:"20px",
@@ -99,12 +100,21 @@ export default class Drawer extends React.Component{
     var divStyle= {
       float:"left"
     }
-    var textStyle = {float:"left",paddingLeft:"0", paddingRight:"0", paddingTop:"13", paddingBottom:"5", lineHeight:"0%", lineWidth:"0%"}
+    var textStyle = {
+      float:"left",
+      paddingLeft:"0",
+      paddingRight:"0",
+      paddingTop:"13",
+      paddingBottom:"5",
+      color:"gray",
+      lineHeight:"0%",
+      lineWidth:"0%"}
 
     return(
       <div style = {drawerStyle} onMouseEnter={this.openDrawer} onMouseOut={this.closeDrawer}>
-        <h1>{this.state.drawerText} </h1>
-
+        <div style = {divStyle}>
+          <h1 style= {textStyle}>{this.state.drawerText} </h1>
+        </div>
         <div style={divStyle}>
           <ImageButton image={testImg}/>
           <h1 style={textStyle}>{this.state.homeButtonText}</h1>
