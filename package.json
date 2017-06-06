@@ -3,11 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "brace-expansion": "^1.1.7",
+    "fs": "0.0.1-security",
+    "ftp": "^0.3.10",
     "hover.css": "^2.2.0",
+    "node-dir": "^0.1.17",
+    "path": "^0.12.7",
+    "q": "^1.5.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-grid-system": "^2.9.2",
+<<<<<<< HEAD
     "react-responsive-carousel": "^3.1.19"
+=======
+    "readable-stream": "^2.2.11",
+    "readdir": "0.0.13",
+    "webpack": "^2.6.1",
+    "xregexp": "^3.2.0"
+>>>>>>> origin/master
   },
   "devDependencies": {
     "npm-install-webpack-plugin": "^4.0.4",
