@@ -29,12 +29,17 @@ export default class Drawer extends React.Component{
     this.setState({homeButtonText2:this.maxWidth/(str.length-1)})
     return (str.substring(0, Math.floor((this.state.Width-40)/x)))
   }
+  neggetChars(str){
+    var x = Math.floor(this.maxWidth/str.length)
+    this.setState({homeButtonText2:this.maxWidth/(str.length-1)})
+    return (str.substring(0, Math.floor((this.state.Width-42)/x)))
+  }
 
   start(){
-    this.interval = setInterval(this.tick, 20)
+    this.interval = setInterval(this.tick,5)
   }
   negstart(){
-    this.interval = setInterval(this.negtick, 20)
+    this.interval = setInterval(this.negtick, 5)
   }
   stop(){
       clearInterval(this.interval)
@@ -66,12 +71,13 @@ export default class Drawer extends React.Component{
     }
     this.setState({
       Width:this.state.Width - 10,
-      drawerText:"D"+ this.getChars(this.drawerTitle),
-      homeButtonText:this.getChars(this.homeButtonText)
+      drawerText:"D"+ this.neggetChars(this.drawerTitle),
+      homeButtonText:this.neggetChars(this.homeButtonText)
     })
 
   }
   openDrawer(){
+    this.stop()
     this.start()
   }
   closeDrawer(){
@@ -111,7 +117,7 @@ export default class Drawer extends React.Component{
       lineWidth:"0%"}
 
     return(
-      <div style = {drawerStyle} onMouseEnter={this.openDrawer} onMouseOut={this.closeDrawer}>
+      <div style = {drawerStyle} onMouseEnter={this.openDrawer} onMouseLeave={this.closeDrawer}>
         <div style = {divStyle}>
           <h1 style= {textStyle}>{this.state.drawerText} </h1>
         </div>
