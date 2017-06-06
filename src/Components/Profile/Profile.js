@@ -4,7 +4,7 @@ import './Profile.css';
 
 
 
-export default class MainBody extends React.Component {
+export default class Profile extends React.Component {
 	constructor(props){
 		super(props)
 		this.image = props.image

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from '../../Components/Header/Header';
-import BackgroundImage from '../../Resources/Backgrounds/background2.png';
+import BackgroundImage from '../../Resources/Backgrounds/background4.png';
 //import Drawer from "./Drawer/Drawer"
 import MainBody from '../../Components/MainBody/MainBody';
 

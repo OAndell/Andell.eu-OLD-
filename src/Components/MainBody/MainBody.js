@@ -5,12 +5,20 @@ import profile1 from '../../Resources/ProfileImages/oscar.jpg';
 import profile2 from '../../Resources/ProfileImages/testProfile.jpg';
 import { Container, Row, Col } from 'react-grid-system';
 import './MainBody.css';
+import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel'
 
 export default class MainBody extends React.Component {
 	constructor(props){
 		super(props)
 	}
   render() {
+	  
+	//Image List test here WAIT FOR BACKEND STUFF
+	var imageList = [];
+	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
+	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
+	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
+	
 
     return(
 			<div  className="bodyBackground">
@@ -38,6 +46,7 @@ export default class MainBody extends React.Component {
 				<hr className="divider"/>
 				<br/>
 				<h2>TEXT</h2>
+				<ImageCarousel images={imageList}/>
 			</div>
 	);
   }
