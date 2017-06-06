@@ -5,7 +5,8 @@
   "dependencies": {
     "hover.css": "^2.2.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-grid-system": "^2.9.2"
   },
   "devDependencies": {
     "npm-install-webpack-plugin": "^4.0.4",
