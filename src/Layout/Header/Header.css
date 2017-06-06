@@ -1,0 +1,13 @@
+.headerBackground{
+	background: linear-gradient(to bottom right, black, rgb(70, 70, 70));
+	margin: auto;
+	height: 125px;
+	border-radius: 5px;
+	border: 2px solid grey;
+}
+
+.headerText{
+	color: White;
+	float: right;
+	margin: 20px;
+}

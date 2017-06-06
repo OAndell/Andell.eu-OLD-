@@ -15,10 +15,10 @@ export default class Layout extends React.Component {
     return (
 		<div style={layoutStyle}>
 			< Header largeText = "Header Text" smallText = "asdasd"/>
-			<MainBody/>
-      <div style= {{position:"absolute", zIndex:3}}>
+			<div style= {{position:"absolute", zIndex:3}}>
 			   <Drawer/>
-      </div>
+			</div>
+			<MainBody/>
 		</div>
 	);
   }

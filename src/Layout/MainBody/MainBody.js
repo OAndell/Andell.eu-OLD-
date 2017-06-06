@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Profile from "./Profile/Profile"
-import testProfile from './ProfileImages/testProfile.jpg'
+import testProfile from './ProfileImages/oscar.jpg'
 
 export default class MainBody extends React.Component {
 	constructor(props){
@@ -25,11 +25,7 @@ export default class MainBody extends React.Component {
 			<div style={profileHolderStyle}>
 				<table>
 					<tr>
-						<td><Profile image={testProfile} desc="Banan1"/></td>
-						<td><Profile image={testProfile} desc="Banan2"/></td> 
-						<td><Profile image={testProfile} desc="Banan3"/></td> 
-						<td><Profile image={testProfile} desc="Banan4"/></td> 
-						<td><Profile image={testProfile} desc="Banan5"/></td> 
+						<td><Profile image={testProfile} desc="Oscar Andell"/></td>
 					</tr>
 				</table>
 			</div>
