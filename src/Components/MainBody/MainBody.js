@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Profile from "./Profile/Profile"
-import testProfile from './ProfileImages/oscar.jpg'
+import Profile from "../../Components/Profile/Profile"
+import testProfile from '../../Resources/ProfileImages/oscar.jpg'
 
 export default class MainBody extends React.Component {
 	constructor(props){

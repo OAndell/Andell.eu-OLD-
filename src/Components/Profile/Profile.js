@@ -15,7 +15,7 @@ export default class MainBody extends React.Component {
     return(
 		<div className="background">
 			<img src={this.image} className="profileImage"/>
-			<h2><a href=''>{this.desc}</a></h2>
+			<h2 className="name"><a href=''>{this.desc}</a></h2>
 		</div>
 	);
   }
