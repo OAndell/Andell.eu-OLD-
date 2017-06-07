@@ -1,13 +1,14 @@
+@import url("../../index.css");
+
 .headerBackground{
-	background: linear-gradient(to bottom right, #2098D1, rgb(70, 70, 70));
+	background: linear-gradient(to bottom right, var(--verydark), var(--dark));
 	margin: auto;
 	height: 100px;
 	border-radius: 5px;
-	border: 2px solid grey;
 }
 
 .headerText{
-	color: White;
+	color: var(--light);
 	float: right;
 	margin: 10px;
 }

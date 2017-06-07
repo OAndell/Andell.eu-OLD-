@@ -1,3 +1,4 @@
+@import url("../../index.css");
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -25,24 +26,24 @@
 }
 
 .menu-item{
-	color:white;
+	color:var(--light);
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: linear-gradient(to bottom right, #2098D1, rgb(70, 70, 70));
+  background: linear-gradient(to top, var(--dark), var(--verydark));
   padding: 2.5em 0em 0;
   font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #2098D1;
+  fill: var(--verydark);
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: var(--light);
   padding: 0.8em;
 }
 

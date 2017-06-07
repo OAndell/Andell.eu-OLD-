@@ -1,3 +1,5 @@
+@import url("../../index.css");
+
 .background{
 	textAlign: center;
 	width: 250px;
@@ -20,7 +22,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  border-color: #2098D1;
+  border-color: var(--dark);
   border-style: solid;
   border-width: 0;
   border-radius: 50px;

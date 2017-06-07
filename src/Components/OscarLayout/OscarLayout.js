@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Header from '../../Components/Header/Header';
 import BackgroundImage from '../../Resources/Backgrounds/background2.png';
 import Drawer from '../../Components/Drawer/Drawer';
+import OscarMainbody from './OscarMainbody'
 
 export default class OscarLayout extends React.Component {
   render() {
@@ -17,7 +18,8 @@ export default class OscarLayout extends React.Component {
       <main id ="page-wrap">
     	<div style={layoutStyle}>
 			  < Header largeText = "Oscar Andell" smallText = "IT Student"/>
-		  </div>
+			<OscarMainbody/>
+		</div>
       </main>
       </div>
 	);

@@ -1,14 +1,18 @@
+@import url("../../index.css");
+
 .bodyBackground{
-	text-Align: center;
-	padding-Top: 20px;
+	padding-Top: 00px;
 	margin:auto;
 	width:90%;
+	color: var(--verydark);
 }
 
-.profileContainer{
+
+
+
+hr.pdivider {
+	background-color:var(--light);
+	border-top: 2px dotted var(--dark);
 }
 
-hr.divider {
-	background-color: #fff;
-	border-top: 2px dotted #8c8b8b;
-}
+

@@ -1,3 +1,14 @@
+
+:root{
+	--verylightT:rgba(221,223,212,0.4);
+	--verylight: #dddfd4;
+	--light: #fae596;
+	--dark: #3fb0ac;
+	--verydark: #173e43;
+}
+
+
+
 *, *:after, *:before {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -21,7 +32,7 @@ p{
 
 h2 > a{
   text-decoration: none;
-  color: rgba(0,0,0,1);
+  color: var(--verydark);
   z-index: 1;
 }
 

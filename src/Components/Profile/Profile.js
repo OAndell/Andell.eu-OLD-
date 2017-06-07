@@ -14,12 +14,10 @@ export default class Profile extends React.Component {
 
   render() { 
     return(
-		<a href="/Oscar">
 			<div className="background">
 				<img src={this.image} className="profileImage"/>
 				<h2 className="name"><a href=''>{this.desc} <i className={this.icon}></i></a></h2>
 			</div>
-		</a>
 	);
   }
 }

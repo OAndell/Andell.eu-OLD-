@@ -12,7 +12,6 @@ export default class MainBody extends React.Component {
 		super(props)
 	}
   render() {
-	  
 	//Image List test here WAIT FOR BACKEND STUFF
 	var imageList = [];
 	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
@@ -39,7 +38,7 @@ export default class MainBody extends React.Component {
 							<div/>
 						</Col>
 						<Col xl={2.4}>
-							<Profile image={profile1} desc="Oscar" icon="fa fa-rebel"/>
+							<a href="/Oscar"><Profile image={profile1} desc="Oscar" icon="fa fa-rebel"/></a>
 						</Col>
 						<Col xl={2.4}>
 							<Profile image={profile2} desc="Anton"/>
@@ -50,13 +49,13 @@ export default class MainBody extends React.Component {
 					</Row>
 				</Container>
 				<br/>
-				<hr className="divider"/>
+				<hr className="pdivider"/>
 				<br/>
 				<h2>TEXT</h2>
 				<ImageCarousel images={imageList}/>
 				<br/>
 				<br/>
-				<hr className="divider"/>
+				<hr className="pdivider"/>
 			</div>
 	);
   }
