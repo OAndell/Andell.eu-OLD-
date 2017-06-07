@@ -18,13 +18,53 @@ export default class MainBody extends React.Component {
 	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
 	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
 	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
-	
 
     return(
 			<div  className="bodyBackground">
 				<h2>TEXT</h2>
-				<Container>
+				<Container className="profileContainer">
+					<Row >
+						<Col xl={3.3}>
+							<div/>
+						</Col>
+						<Col xl={2.4}>
+							<Profile image={profile2} desc="Stefan"/>
+						</Col>
+						<Col xl={2.4}>
+							<Profile image={profile2} desc="Maria"/>
+						</Col>
+					</Row>
+					<Row >
+						<Col xl={2}>
+							<div/>
+						</Col>
+						<Col xl={2.4}>
+							<Profile image={profile1} desc="Oscar" icon="fa fa-rebel"/>
+						</Col>
+						<Col xl={2.4}>
+							<Profile image={profile2} desc="Anton"/>
+						</Col>
+						<Col xl={2.4}>
+							<Profile image={profile2} desc="Alice"/>
+						</Col>
+					</Row>
+				</Container>
+				<br/>
+				<hr className="divider"/>
+				<br/>
+				<h2>TEXT</h2>
+				<ImageCarousel images={imageList}/>
+				<br/>
+				<br/>
+				<hr className="divider"/>
+			</div>
+	);
+  }
+}
+
+/* ALTERNATIV DESIGN
 					<Row>
+
 						<Col xl={2.4}>
 							<Profile image={profile1} desc="Oscar Andell"/>
 						</Col>
@@ -41,15 +81,7 @@ export default class MainBody extends React.Component {
 							<Profile image={profile2} desc="Banan4"/>
 						</Col>
 					</Row>
-				</Container>
-				<br/>
-				<hr className="divider"/>
-				<br/>
-				<h2>TEXT</h2>
-				<ImageCarousel images={imageList}/>
-			</div>
-	);
-  }
-}
+
+*/
 
 
