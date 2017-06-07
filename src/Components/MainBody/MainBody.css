@@ -1,6 +1,11 @@
 .bodyBackground{
 	text-Align: center;
 	padding-Top: 20px;
+	margin:auto;
+	width:90%;
+}
+
+.profileContainer{
 }
 
 hr.divider {
