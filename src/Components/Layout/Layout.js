@@ -4,6 +4,7 @@ import Header from '../../Components/Header/Header';
 import BackgroundImage from '../../Resources/Backgrounds/background2.png';
 import MainBody from '../../Components/MainBody/MainBody';
 import Drawer from '../../Components/Drawer/Drawer';
+import Networking from "../networking/networking"
 
 export default class Layout extends React.Component {
   render() {
@@ -18,11 +19,10 @@ export default class Layout extends React.Component {
       <main id ="page-wrap">
     	<div style={layoutStyle}>
 			  < Header largeText = "Header Text" smallText = "asdasd"/>
-			  <MainBody/>
+      <MainBody/>
 		  </div>
       </main>
       </div>
 	);
   }
 }
- 

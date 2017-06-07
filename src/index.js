@@ -9,7 +9,7 @@ ReactDOM.render((
   <BrowserRouter>
     <main>
     <Switch>
-      <Route exact path='/hj' component={Layout}/>
+      <Route exact path='/' component={Layout}/>
       <Route path='/bildernamn' component={Layout}/>
 
     </Switch>
