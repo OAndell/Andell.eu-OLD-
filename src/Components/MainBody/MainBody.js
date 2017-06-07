@@ -14,12 +14,6 @@ export default class MainBody extends React.Component {
 		super(props)
 	}
   render() {
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
-	//Image List test here WAIT FOR BACKEND STUFF
-
 	var imageList = getImages();
 
 
