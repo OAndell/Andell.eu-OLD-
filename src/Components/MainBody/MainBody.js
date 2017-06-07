@@ -6,17 +6,22 @@ import profile2 from '../../Resources/ProfileImages/testProfile.jpg';
 import { Container, Row, Col } from 'react-grid-system';
 import './MainBody.css';
 import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel'
+import {getImages} from "../networking/networking"
+
 
 export default class MainBody extends React.Component {
 	constructor(props){
 		super(props)
 	}
   render() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 	//Image List test here WAIT FOR BACKEND STUFF
-	var imageList = [];
-	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
-	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
-	imageList.push("http://andell.eu/onewebstatic/5d12831ece-parasail-DSC_0040.JPG");
+
+	var imageList = getImages();
+
 
     return(
 			<div  className="bodyBackground">
@@ -82,5 +87,3 @@ export default class MainBody extends React.Component {
 					</Row>
 
 */
-
-

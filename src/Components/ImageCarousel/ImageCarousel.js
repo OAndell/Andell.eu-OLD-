@@ -10,15 +10,16 @@ function UserGreeting(props) {
 
 
 export default class ImageCarousel extends React.Component {
-	
+
 	constructor(props){
 		super(props)
 		this.images = props.images;
+    console.log(this.images.toString())
 	}
-	
-	
+
+
 	render(){
-		
+
 		var settings = {
 			dots: true,
 			arrows:true,
@@ -28,7 +29,7 @@ export default class ImageCarousel extends React.Component {
 			slidesToScroll: 1,
 			className: 'container'
 		};
-		
+
 		let listSiteShow = [];
 	    if( this.images.length >0 ) {
 			for(var i = 0; i<this.images.length; i++){
@@ -36,9 +37,9 @@ export default class ImageCarousel extends React.Component {
 			}
 		}
 		else listSiteShow.push(<div></div>);
-		
+
 		return (
-			<div className="container"> 
+			<div className="container">
 				<Slider {...settings}>
 					{listSiteShow}
 				</Slider>
