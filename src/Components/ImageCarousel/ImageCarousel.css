@@ -3,7 +3,7 @@
 
 
 .container{
-	background: linear-gradient(to bottom left, var(--dark),  var(--verydark));
+	background: var(--verydark);
 	margin-left: auto;
 	margin-right: auto;
 }

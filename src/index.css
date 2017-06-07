@@ -1,10 +1,16 @@
+/*
 
-:root{
-	--verylightT:rgba(221,223,212,0.4);
+--verylightT:rgba(221,223,212,0.4);
 	--verylight: #dddfd4;
 	--light: #fae596;
 	--dark: #3fb0ac;
 	--verydark: #173e43;
+*/
+:root{
+	--verylight: #252839;
+	--light: #677077;
+	--dark: #b5b5b7;
+	--verydark: #f2b632;
 }
 
 

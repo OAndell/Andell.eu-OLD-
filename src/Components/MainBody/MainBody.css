@@ -11,7 +11,7 @@
 
 
 hr.pdivider {
-	background-color:var(--light);
+	background-color:var(--verylight);
 	border-top: 2px dotted var(--dark);
 }
 

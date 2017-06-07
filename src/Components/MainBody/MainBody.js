@@ -19,30 +19,29 @@ export default class MainBody extends React.Component {
 
     return(
 			<div  className="bodyBackground">
-				<h2>TEXT</h2>
 				<Container className="profileContainer">
 					<Row >
-						<Col xl={3.3}>
+						<Col xl={2.9}>
 							<div/>
 						</Col>
-						<Col xl={2.4}>
+						<Col xl={2.9}>
 							<Profile image={profile2} desc="Stefan"/>
 						</Col>
-						<Col xl={2.4}>
+						<Col xl={2.9}>
 							<Profile image={profile2} desc="Maria"/>
 						</Col>
 					</Row>
 					<Row >
-						<Col xl={2}>
+						<Col xl={1.4}>
 							<div/>
 						</Col>
-						<Col xl={2.4}>
+						<Col xl={2.9}>
 							<a href="/Oscar"><Profile image={profile1} desc="Oscar" icon="fa fa-rebel"/></a>
 						</Col>
-						<Col xl={2.4}>
+						<Col xl={2.9}>
 							<Profile image={profile2} desc="Anton"/>
 						</Col>
-						<Col xl={2.4}>
+						<Col xl={2.9}>
 							<Profile image={profile2} desc="Alice"/>
 						</Col>
 					</Row>

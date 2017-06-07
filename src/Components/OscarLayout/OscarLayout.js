@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from '../../Components/Header/Header';
-import BackgroundImage from '../../Resources/Backgrounds/background2.png';
+import BackgroundImage from '../../Resources/Backgrounds/background.png';
 import Drawer from '../../Components/Drawer/Drawer';
 import OscarMainbody from './OscarMainbody'
 
