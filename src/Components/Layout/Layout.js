@@ -1,23 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from '../../Components/Header/Header';
-import BackgroundImage from '../../Resources/Backgrounds/background2.png';
+import BackgroundImage from '../../Resources/Backgrounds/background4.png';
 import MainBody from '../../Components/MainBody/MainBody';
 import Drawer from '../../Components/Drawer/Drawer';
+import Networking from "../networking/networking"
 
 export default class Layout extends React.Component {
   render() {
 	var layoutStyle = {
 		backgroundImage: `url(${BackgroundImage})`,
 		height:'200vh',
-		positon: "absolute"
-	};
+    positon: "absolute"
+		};
     return (
       <div id ="outer-container">
       <Drawer/>
       <main id ="page-wrap">
     	<div style={layoutStyle}>
 			  < Header largeText = "Header Text" smallText = "asdasd"/>
+      <Networking/>
 			  <MainBody/>
 		  </div>
       </main>
@@ -25,4 +27,3 @@ export default class Layout extends React.Component {
 	);
   }
 }
- 

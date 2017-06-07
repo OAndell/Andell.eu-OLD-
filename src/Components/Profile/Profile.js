@@ -9,17 +9,14 @@ export default class Profile extends React.Component {
 		super(props)
 		this.image = props.image
 		this.desc = props.desc
-		this.icon = props.icon
 	}
 
   render() { 
     return(
-		<a href="/Oscar">
-			<div className="background">
-				<img src={this.image} className="profileImage"/>
-				<h2 className="name"><a href=''>{this.desc} <i className={this.icon}></i></a></h2>
-			</div>
-		</a>
+		<div className="background">
+			<img src={this.image} className="profileImage"/>
+			<h2 className="name"><a href=''>{this.desc}</a></h2>
+		</div>
 	);
   }
 }

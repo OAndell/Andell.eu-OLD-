@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Layout from './Components/Layout/Layout'
+import ab from './Components/networking/bildernamn'
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-ReactDOM.render(
-  <Layout />,
-  document.getElementById('app')
-);
+ReactDOM.render((
+  <BrowserRouter>
+    <main>
+    <Switch>
+      <Route exact path='/' component={Layout}/>
+      <Route path='/bildernamn' component={ab}/>
+
+    </Switch>
+  </main>
+  </BrowserRouter>
+), document.getElementById('app'))
 
 registerServiceWorker();
