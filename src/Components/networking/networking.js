@@ -14,7 +14,7 @@ export default class Networking extends React.Component {
  fetchUser() {
 
 
-    axios.get('http://localhost:3004/bildernamn')
+    axios.get('http://127.0.0.1:3004/')
     .then(function (response) {
     console.log(response);
   })
