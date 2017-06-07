@@ -1,6 +1,29 @@
 .profileBackground{
 	textAlign: center;
-	width: 40vh;
-	height: 60vh;
-	background: gray;
+	width: 370px;
+	height: 600px;
+	background: var(--dark);
+	border-color: var(--verydark);
+	border-style: solid;
+	border-width: 3px;
+	color:black;
+}
+
+.bigProfileImage{
+	margin-top:10px;
+	width: 325px;
+	height: 325px;
+	border-radius: 70%; 
+	border-color: var(--verydark);
+	border-style: solid;
+	border-width: 3px;
+}
+
+.profiledivider{
+	margin:20px;
+	border-top: 1px solid #8c8b8b;
+}
+
+.profileTextHolder{
+	font-size: 120%;
 }

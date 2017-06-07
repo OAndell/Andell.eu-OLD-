@@ -1,0 +1,10 @@
+.resumeHolder{
+	textAlign: center;
+	width: 700px;
+	height: 100vh;
+	background: var(--dark);
+	border-color: var(--verydark);
+	border-style: solid;
+	border-width: 3px;
+	color:black;
+}

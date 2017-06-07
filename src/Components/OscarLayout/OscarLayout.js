@@ -17,7 +17,7 @@ export default class OscarLayout extends React.Component {
       <Drawer/>
       <main id ="page-wrap">
     	<div style={layoutStyle}>
-			  < Header largeText = "Oscar Andell" smallText = "IT Student"/>
+			  <Header largeText = "Oscar Andell" smallText = "IT Student"/>
 			<OscarMainbody/>
 		</div>
       </main>
