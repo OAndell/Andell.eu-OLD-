@@ -1,7 +1,7 @@
 .headerBackground{
-	background: linear-gradient(to bottom right, black, rgb(70, 70, 70));
+	background: linear-gradient(to bottom right, #2098D1, rgb(70, 70, 70));
 	margin: auto;
-	height: 125px;
+	height: 100px;
 	border-radius: 5px;
 	border: 2px solid grey;
 }
@@ -9,5 +9,5 @@
 .headerText{
 	color: White;
 	float: right;
-	margin: 20px;
+	margin: 10px;
 }

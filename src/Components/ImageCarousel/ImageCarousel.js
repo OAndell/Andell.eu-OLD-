@@ -25,7 +25,8 @@ export default class ImageCarousel extends React.Component {
 			infinite: true,
 			speed: 500,
 			slidesToShow: 3,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			className: 'container'
 		};
 		
 		let listSiteShow = [];
