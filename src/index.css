@@ -11,6 +11,7 @@
 	--light: #677077;
 	--dark: #EFEFEF;
 	--verydark: #f2b632;
+	
 }
 
 
@@ -30,15 +31,17 @@ h2{
 	font-family: 'Ubuntu', sans-serif;
 }
 
+h3{
+	font-family: 'Ubuntu', sans-serif;
+}
+
 p{
 	font-family: 'Ubuntu', sans-serif;
-	padding: .5rem;
 }
 
 
 h2 > a{
   text-decoration: none;
-  color: var(--verydark);
   z-index: 1;
 }
 
