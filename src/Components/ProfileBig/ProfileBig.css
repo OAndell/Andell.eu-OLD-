@@ -1,7 +1,6 @@
 .profileBackground{
 	textAlign: center;
-	width: 370px;
-	height: 600px;
+	display:block;
 	background: var(--dark);
 	border-color: var(--verydark);
 	border-style: solid;
@@ -20,10 +19,21 @@
 }
 
 .profiledivider{
-	margin:20px;
+	margin:17px;
 	border-top: 1px solid #8c8b8b;
 }
 
 .profileTextHolder{
 	font-size: 120%;
 }
+
+.iconLinksHolder{
+	margin:auto;
+	font-size: 200%;
+	padding-bottom:10px;
+}
+
+a{
+	color:black;
+}
+

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Profile from '../../Components/Profile/Profile';
 import profile1 from '../../Resources/ProfileImages/oscar.jpg';
-import profile2 from '../../Resources/ProfileImages/testProfile.jpg';
+import profile2 from '../../Resources/ProfileImages/testProfile.png';
 import { Container, Row, Col } from 'react-grid-system';
 import './MainBody.css';
 import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel'

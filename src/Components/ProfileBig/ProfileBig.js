@@ -10,9 +10,28 @@ export default class ProfileBig extends React.Component {
 		this.title = props.title
 		this.email = props.email
 		this.location = props.location
+		this.linkdin = props.linkdin
+		this.github = props.github
+		this.displayGithub = this.displayGithub.bind(this);
 	}
-
-  render() { 
+	
+	
+	displayGithub(){
+		if(this.github != null){
+			return <p><a href={this.github}><i className="fa fa-github"></i></a></p>;
+		}
+		
+	}
+	
+	displayLinkedin(){
+		if(this.linkdin != null){
+			return <p><a href={this.linkdin}><i className="fa fa-linkedin"></i></a></p>;
+		}
+	}
+	
+	
+	render() { 
+  
     return(
 			<div className="profileBackground">
 				<img src={this.image} className="bigProfileImage"/>
@@ -23,6 +42,14 @@ export default class ProfileBig extends React.Component {
 					<p><i className="fa fa-location-arrow"></i> {this.location}</p>
 					<p><i className="fa fa-envelope"></i> {this.email}</p>
 				</div>
+				<hr className="profiledivider"/>
+				<table className="iconLinksHolder">
+					<tr>
+						<th>{this.displayGithub()}</th>
+						&nbsp;
+						<th>{this.displayLinkedin()}</th>
+					</tr>
+				</table>
 			</div>
 	);
   }

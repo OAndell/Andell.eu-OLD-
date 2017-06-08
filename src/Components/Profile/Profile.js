@@ -16,7 +16,7 @@ export default class Profile extends React.Component {
     return(
 			<div className="background">
 				<img src={this.image} className="profileImage"/>
-				<h2 className="name"><a href=''>{this.desc} <i className={this.icon}></i></a></h2>
+				<h2 className="name">{this.desc} <i className={this.icon}></i></h2>
 			</div>
 	);
   }
