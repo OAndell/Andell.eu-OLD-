@@ -15,6 +15,7 @@ export default class MainBody extends React.Component {
 	}
   render() {
 	var imageList = getImages();
+	
 
 
     return(
