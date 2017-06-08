@@ -9,7 +9,6 @@ export default class Layout extends React.Component {
   render() {
 	var layoutStyle = {
 		backgroundImage: `url(${BackgroundImage})`,
-		//backgroundColor:'#252839',
 		height:'200vh',
 		positon: "absolute"
 	};

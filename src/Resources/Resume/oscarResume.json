@@ -1,0 +1,67 @@
+{
+  "A": {
+	"title":"About",
+	"underTitle":"",
+	"date":"",
+	"icon":"fa fa-user",
+    "summary": "I am a 23 year old aspiring software developer currently studying my third year to become a master of engineering in the field of information technology at Linköping University."
+  },
+  "B": {
+    "title":"Education",
+	"underTitle":"",
+	"date":"",
+	"icon":"fa fa-graduation-cap",
+    "summary": ""
+  },
+  "C": {
+    "title":"",
+	"underTitle":"Master of engineering in IT at Linköping university",
+	"date":"Aug 2015 - Current",
+	"icon":"",
+    "summary": "A technical master of engineering degree with large focus on problem solving. Studying my third year."
+  },
+	"D": {
+    "title":"",
+	"underTitle":"High school with focus on IT, JB gymnastiet in Jönköping",
+	"date":"2010 - 2013",
+	"icon":"",
+    "summary": ""
+  },
+  "E": {
+    "title":"Work experince",
+	"underTitle":"",
+	"date":"",
+	"icon":"fa fa-cog",
+    "summary": ""
+  },
+  "F": {
+    "title":"",
+	"underTitle":"Soldier in the Swedish Armed Forces",
+	"date":"Aug 2013 - Aug 2015",
+	"icon":"",
+    "summary": "Traffic/logistic soldier in the national MOVCON-platoon at the logistic regiment in Skövde. As a traffic soldier in the Swedish armed forces I was part of the movement control unit which mission outside of the standard military duty was tohandle logistics and transportation of military units. My duties included combat training, vehicle service, transportation and communication."
+  },
+ "G": {
+    "title":"Technical skills",
+	"underTitle":"",
+	"date":"",
+	"icon":"fa fa-keyboard-o",
+    "summary": ""
+  },
+"H": {
+    "title":"",
+	"underTitle":"Good knowledge in Java and Android development.",
+	"date":"",
+	"icon":"",
+    "summary": "I have studied Object-oriented programming, data structures and algorithms aswell as Android development. I have also used Java a great deal when working on my own project in my spare time."
+  },
+"L": {
+    "title":"",
+	"underTitle":"Basic knowledge of Javascript and web development.",
+	"date":"",
+	"icon":"",
+    "summary": "My skills in web development comes mostly form building this website using HTML, CSS and the Javascript library React."
+  }
+
+
+}
