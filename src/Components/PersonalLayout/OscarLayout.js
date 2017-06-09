@@ -1,21 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from '../../Components/Header/Header';
+import BackgroundImage from '../../Resources/Backgrounds/background.png';
+import Drawer from '../../Components/Drawer/Drawer';
 import profileImage from '../../Resources/ProfileImages/oscar.jpg';
 import { Container, Row, Col } from 'react-grid-system';
-import './OscarMainBody.css';
+import './OscarLayout.css';
 import Profile from '../../Components/ProfileBig/ProfileBig';
 import Description from '../../Components/Description/Description';
-//import CV from '../../Resources/Resume/testResume.json';
-//const CV = require('../../Resources/Resume/testResume.json'); 
-var CV = require('../../Resources/Resume/testResume.json');
+var CV = require('../../Resources/Resume/oscarResume.json');
 
-export default class OscarMainBody extends React.Component {
-	constructor(props){
-		super(props)
-	}
+
+export default class OscarLayout extends React.Component {
   render() {
-    return(
-			<div  className="bodyBackground">
+	var layoutStyle = {
+		backgroundImage: `url(${BackgroundImage})`,
+		height:'200vh',
+		positon: "absolute"
+	};
+    return (
+      <div id ="outer-container">
+      <Drawer/>
+      <main id ="page-wrap">
+    	<div style={layoutStyle}>
+			  <Header largeText = "Oscar Andell" smallText = "IT Student"/>
+				<div  className="bodyBackground">
 				<Container>
 					<Row >
 						<Col xl={4.1}>
@@ -27,8 +36,10 @@ export default class OscarMainBody extends React.Component {
 					</Row>
 				</Container>
 			</div>
+		</div>
+      </main>
+      </div>
 	);
   }
 }
-
-
+ 

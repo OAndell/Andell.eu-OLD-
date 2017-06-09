@@ -21,6 +21,7 @@ export default class Description extends React.Component {
 					<h2><i className={value.icon}/> {value.title}</h2>
 					<h3>{value.underTitle}</h3>
 					<p className="date">{value.date}</p>
+					<br/>
 					<p>{value.summary}</p>
 					<br/>
 				</div>

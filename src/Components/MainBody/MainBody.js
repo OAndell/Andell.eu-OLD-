@@ -26,10 +26,10 @@ export default class MainBody extends React.Component {
 							<div/>
 						</Col>
 						<Col xl={2.9}>
-							<Profile image={profile2} desc="Stefan"/>
+							<a href="/Stefan"><Profile image={profile2} desc="Stefan"/></a>
 						</Col>
 						<Col xl={2.9}>
-							<Profile image={profile2} desc="Maria"/>
+							<a href="/Maria"><Profile image={profile2} desc="Maria"/></a>
 						</Col>
 					</Row>
 					<Row >
@@ -40,10 +40,10 @@ export default class MainBody extends React.Component {
 							<a href="/Oscar"><Profile image={profile1} desc="Oscar" icon="fa fa-rebel"/></a>
 						</Col>
 						<Col xl={2.9}>
-							<Profile image={profile2} desc="Anton"/>
+							<a href="/Anton"><Profile image={profile2} desc="Anton"/></a>
 						</Col>
 						<Col xl={2.9}>
-							<Profile image={profile2} desc="Alice"/>
+							<a href="/Alice"><Profile image={profile2} desc="Alice"/></a>
 						</Col>
 					</Row>
 				</Container>
