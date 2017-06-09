@@ -3,12 +3,8 @@ import ReactDOM from 'react-dom';
 import './ImageCarousel.css';
 import Slider from 'react-slick'
 import Select from 'react-select';
-import 'react-select/dist/react-select.css';
-
-
-function UserGreeting(props) {
-  return <h1>Welcome back!</h1>;
-}
+import './react-select.css';
+import {login} from "../networking/networking"
 
 
 export default class ImageCarousel extends React.Component {
@@ -18,10 +14,13 @@ export default class ImageCarousel extends React.Component {
 		this.images = props.images
     this.state ={ start:<h1 style= {{color:"gray"}}>choose category</h1>, selected: ""}
     this.logChange= this.logChange.bind(this)
+    this.log = this.log.bind(this)
     this.options = []
     for (var key in this.images){
       this.options.push({value:key, label:key})
+
     }
+
     console.log(this.images)
 
 	}
@@ -68,6 +67,9 @@ export default class ImageCarousel extends React.Component {
   return element
 
 }
+log(){
+  login("ss","bb", null)
+}
 
 
 	render(){
@@ -84,13 +86,17 @@ export default class ImageCarousel extends React.Component {
 
 		return (
 
+
 			<div className="container">
+        <button style={{width:"30", height:"30"}} onClick={this.log}></button>
         <Select
+  className='Select'
   name="form-field-name"
   value={this.state.selected}
   options={this.options}
   onChange={this.logChange}
 />
+
 
         {this.state.start}
 

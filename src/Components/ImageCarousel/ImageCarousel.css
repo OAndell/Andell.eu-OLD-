@@ -1,7 +1,15 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
-@import '~react-select/dist/react-select.css';
 
+.Select{
+
+
+}
+.selectItem{
+	background-color: green;
+
+
+}
 .container{
 	background: var(--verydark);
 	margin-left: auto;
