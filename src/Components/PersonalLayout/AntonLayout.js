@@ -6,7 +6,6 @@ import Drawer from '../../Components/Drawer/Drawer';
 import { Container, Row, Col } from 'react-grid-system';
 import Profile from '../../Components/ProfileBig/ProfileBig';
 import Description from '../../Components/Description/Description';
-import profileImage from '../../Resources/ProfileImages/testProfile.png';
 var CV = require('../../Resources/Resume/antonResume.json');
 
 
@@ -27,7 +26,7 @@ export default class AntonLayout extends React.Component {
 				<Container>
 					<Row >
 						<Col xl={4.1}>
-							<Profile image={profileImage} name="Anton Andell" email="Anton@Andell.eu" location="Linköping, Sverige" />
+							<Profile image={"http://andell.eu/profileImages/anton.jpg"} name="Anton Andell" email="Anton@Andell.eu" location="Linköping, Sverige" />
 						</Col>
 						<Col xl={4.1}>
 							<Description CV={CV}/>

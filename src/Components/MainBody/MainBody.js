@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Profile from '../../Components/Profile/Profile';
-import profile1 from '../../Resources/ProfileImages/oscar.jpg';
-import profile2 from '../../Resources/ProfileImages/testProfile.png';
 import { Container, Row, Col } from 'react-grid-system';
 import './MainBody.css';
 import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel'
@@ -13,6 +11,11 @@ export default class MainBody extends React.Component {
 	constructor(props){
 		super(props)
 	}
+	
+	getProfileImage(name){
+		return "http://andell.eu/profileImages/"+ name +".jpg";
+	}
+	
   render() {
 	var imageList = getImages();
 	
@@ -26,10 +29,10 @@ export default class MainBody extends React.Component {
 							<div/>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Stefan"><Profile image={profile2} desc="Stefan"/></a>
+							<a href="/Stefan"><Profile image={this.getProfileImage("stefan")} desc="Stefan"/></a>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Maria"><Profile image={profile2} desc="Maria"/></a>
+							<a href="/Maria"><Profile image={this.getProfileImage("maria")} desc="Maria"/></a>
 						</Col>
 					</Row>
 					<Row >
@@ -37,47 +40,18 @@ export default class MainBody extends React.Component {
 							<div/>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Oscar"><Profile image={profile1} desc="Oscar" icon="fa fa-rebel"/></a>
+							<a href="/Oscar"><Profile image={this.getProfileImage("oscar")} desc="Oscar" icon="fa fa-rebel"/></a>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Anton"><Profile image={profile2} desc="Anton"/></a>
+							<a href="/Anton"><Profile image={this.getProfileImage("anton")} desc="Anton"/></a>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Alice"><Profile image={profile2} desc="Alice"/></a>
+							<a href="/Alice"><Profile image={this.getProfileImage("alice")} desc="Alice"/></a>
 						</Col>
 					</Row>
 				</Container>
-				<br/>
-				<hr className="pdivider"/>
-				<br/>
-				<h2>TEXT</h2>
-				<ImageCarousel images={imageList}/>
-				<br/>
-				<br/>
-				<hr className="pdivider"/>
 			</div>
 	);
   }
 }
 
-/* ALTERNATIV DESIGN
-					<Row>
-
-						<Col xl={2.4}>
-							<Profile image={profile1} desc="Oscar Andell"/>
-						</Col>
-						<Col xl={2.4}>
-							<Profile image={profile2} desc="Banan1"/>
-						</Col>
-						<Col xl={2.4}>
-							<Profile image={profile2} desc="Banan2"/>
-						</Col>
-						<Col xl={2.4}>
-							<Profile image={profile2} desc="Banan3"/>
-						</Col>
-						<Col xl={2.4}>
-							<Profile image={profile2} desc="Banan4"/>
-						</Col>
-					</Row>
-
-*/

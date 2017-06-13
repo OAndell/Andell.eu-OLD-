@@ -24,7 +24,7 @@ export default class ImageCarousel extends React.Component {
     console.log(this.images)
 
 	}
-  _
+
   logChange(val) {
     console.log(val)
     if (val != null){
@@ -36,7 +36,6 @@ export default class ImageCarousel extends React.Component {
 }
 
   change(key){
-
     	var settings = {
     			dots: true,
     			arrows:true,
@@ -58,20 +57,17 @@ export default class ImageCarousel extends React.Component {
 
     const element = (
       <div className="container">
-      <Slider {...settings}>
-        {listSiteShow}
-      </Slider>
-    </div>
-
-  );
-  return element
-
-}
-log(){
-  login("ss","bb", null)
-}
-
-
+		  <Slider {...settings}>
+			{listSiteShow}
+		  </Slider>
+	  </div>);
+	return element
+	}
+	
+	
+	log(){
+	  login("ss","bb", null)
+	}
 	render(){
 
     /* use key/value for intended purpose */
@@ -96,8 +92,6 @@ log(){
   options={this.options}
   onChange={this.logChange}
 />
-
-
         {this.state.start}
 
 			</div>

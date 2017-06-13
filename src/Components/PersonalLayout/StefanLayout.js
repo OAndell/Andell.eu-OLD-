@@ -6,7 +6,6 @@ import Drawer from '../../Components/Drawer/Drawer';
 import { Container, Row, Col } from 'react-grid-system';
 import Profile from '../../Components/ProfileBig/ProfileBig';
 import Description from '../../Components/Description/Description';
-import profileImage from '../../Resources/ProfileImages/testProfile.png';
 var CV = require('../../Resources/Resume/stefanResume.json');
 
 
@@ -27,7 +26,7 @@ export default class StefanLayout extends React.Component {
 				<Container>
 					<Row >
 						<Col xl={4.1}>
-							<Profile image={profileImage} name="Stefan Andell" email="Stefan@Andell.eu" location="Jönköping, Sverige" />
+							<Profile image={"http://andell.eu/profileImages/stefan.jpg"} name="Stefan Andell" email="Stefan@Andell.eu" location="Jönköping, Sverige" />
 						</Col>
 						<Col xl={4.1}>
 							<Description CV={CV}/>

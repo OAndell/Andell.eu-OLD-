@@ -1,6 +1,6 @@
 .resumeHolder{
-	width: 700px;
-	height: 100vh;
+	display:block;
+	width:180%;
 	background: var(--dark);
 	border-color: var(--verydark);
 	border-style: solid;

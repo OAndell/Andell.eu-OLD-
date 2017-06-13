@@ -6,24 +6,29 @@ import StefanLayout from './Components/PersonalLayout/StefanLayout'
 import AntonLayout from './Components/PersonalLayout/AntonLayout'
 import AliceLayout from './Components/PersonalLayout/AliceLayout'
 import MariaLayout from './Components/PersonalLayout/MariaLayout'
+import EditPage from './Components/EditPage/EditPage'
+import ImagePage from './Components/ImagePage/ImagePage'
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
-import {BrowserRouter, Switch, Route} from "react-router-dom"
+//import {HashRouter , Switch, Route} from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 ReactDOM.render((
-  <BrowserRouter>
-    <main>
-    <Switch>
-      <Route exact path='/' component={Layout}/>
+
+   <Router>
+	<Switch>
+	<Route exact path='/' component={Layout}/>
       <Route path='/bildernamn' component={Layout}/>
 	  <Route path='/Oscar' component={OscarLayout}/>
 	  <Route path='/Stefan' component={StefanLayout}/>
 	  <Route path='/Anton' component={AntonLayout}/>
 	  <Route path='/Alice' component={AliceLayout}/>
 	  <Route path='/Maria' component={MariaLayout}/>
-    </Switch>
-  </main>
-  </BrowserRouter>
+	  <Route path='/Edit' component={EditPage}/>
+	  <Route path='/Images' component={ImagePage}/>
+		</Switch>
+  </Router>
+
 ), document.getElementById('app'))
 
 registerServiceWorker();

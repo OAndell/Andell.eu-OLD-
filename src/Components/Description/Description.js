@@ -7,7 +7,6 @@ export default class Description extends React.Component {
 		super(props)
 		this.lang  = props.lang
 		this.CV = props.CV
-		console.log(this.CV.toString());
 		this.parseJson = this.parseJson.bind(this);
 	}
 	
