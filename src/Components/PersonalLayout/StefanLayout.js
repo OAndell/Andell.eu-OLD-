@@ -6,10 +6,28 @@ import Drawer from '../../Components/Drawer/Drawer';
 import { Container, Row, Col } from 'react-grid-system';
 import Profile from '../../Components/ProfileBig/ProfileBig';
 import Description from '../../Components/Description/Description';
-var CV = require('../../Resources/Resume/stefanResume.json');
-
+var url = 'http://andell.eu/resume/stefanResume.json';
 
 export default class StefanLayout extends React.Component {
+	constructor(props){
+		super(props)
+		this.state = {desc : <br/>}
+		this.getCV = this.getCV.bind(this);
+		this.getCV();
+    }	
+	
+	getCV(){
+		fetch(url, {mode: 'cors'})
+			.then(res => res.json())
+			.then(function(data) {
+				this.setState({desc:<Description CV = {data}/>});
+			}.bind(this))
+		.catch(function(data) {
+				console.log("error fetching resume");
+				console.log(data);
+		}.bind(this));
+	}
+	
   render() {
 	var layoutStyle = {
 		backgroundImage: `url(${BackgroundImage})`,
@@ -29,7 +47,7 @@ export default class StefanLayout extends React.Component {
 							<Profile image={"http://andell.eu/profileImages/stefan.jpg"} name="Stefan Andell" email="Stefan@Andell.eu" location="Jönköping, Sverige" />
 						</Col>
 						<Col xl={4.1}>
-							<Description CV={CV}/>
+							{this.state.desc}
 						</Col>
 					</Row>
 				</Container>

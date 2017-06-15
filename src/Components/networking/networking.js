@@ -24,8 +24,6 @@ function getImages(){
 		}
 	}
 	ImageDict[title] = imageList
-
-
 	return ImageDict
 }
 function cleanArray(actual) {
@@ -38,7 +36,26 @@ function cleanArray(actual) {
   return newArray;
 }
 
-//TODO make json 
+ function getJSON(url){
+	 fetch(url, {mode: 'cors'})
+	 .then(res => res.json())
+  .then(function(data) {
+		console.log("sucsess");
+		for (var key in data) {
+			var value = data[key];
+			console.log(value);
+			console.log(value.underTitle);
+		}	
+		return data;
+    })
+	.catch(function(data) {
+			console.log("error fetching resume");
+			console.log(data);
+			return data;
+	});
+ }
+	
+
 
 function login (name, password, callback){
 	fetch('http://127.0.0.1:5000/', {
@@ -58,5 +75,6 @@ function login (name, password, callback){
 }
 
 export {cleanArray}
+export{getJSON}
 export {getImages}
 export {login}

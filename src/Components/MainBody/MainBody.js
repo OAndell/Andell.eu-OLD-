@@ -29,10 +29,10 @@ export default class MainBody extends React.Component {
 							<div/>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Stefan"><Profile image={this.getProfileImage("stefan")} desc="Stefan"/></a>
+							<a href="#/Stefan"><Profile image={this.getProfileImage("stefan")} desc="Stefan"/></a>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Maria"><Profile image={this.getProfileImage("maria")} desc="Maria"/></a>
+							<a href="#/Maria"><Profile image={this.getProfileImage("maria")} desc="Maria"/></a>
 						</Col>
 					</Row>
 					<Row >
@@ -40,13 +40,13 @@ export default class MainBody extends React.Component {
 							<div/>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Oscar"><Profile image={this.getProfileImage("oscar")} desc="Oscar" icon="fa fa-rebel"/></a>
+							<a href="#/Oscar"><Profile image={this.getProfileImage("oscar")} desc="Oscar" icon="fa fa-rebel"/></a>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Anton"><Profile image={this.getProfileImage("anton")} desc="Anton"/></a>
+							<a href="#/Anton"><Profile image={this.getProfileImage("anton")} desc="Anton"/></a>
 						</Col>
 						<Col xl={2.9}>
-							<a href="/Alice"><Profile image={this.getProfileImage("alice")} desc="Alice"/></a>
+							<a href="#/Alice"><Profile image={this.getProfileImage("alice")} desc="Alice"/></a>
 						</Col>
 					</Row>
 				</Container>

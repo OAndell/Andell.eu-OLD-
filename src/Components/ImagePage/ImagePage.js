@@ -19,7 +19,7 @@ export default class ImagePage extends React.Component {
       <Drawer/>
       <main id ="page-wrap">
     	<div style={layoutStyle}>
-			  <Header largeText = "Oscar Andell" smallText = "IT Student"/>
+			  <Header largeText = "Bildgalleri" smallText = ""/>
 				<div  className="bodyBackground">
 					<ImageCarousel images={imageList}/>
 			</div>

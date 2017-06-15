@@ -86,12 +86,12 @@ export default class ImageCarousel extends React.Component {
 			<div className="container">
         <button style={{width:"30", height:"30"}} onClick={this.log}></button>
         <Select
-  className='Select'
-  name="form-field-name"
-  value={this.state.selected}
-  options={this.options}
-  onChange={this.logChange}
-/>
+		  className='Select'
+		  name="form-field-name"
+		  value={this.state.selected}
+		  options={this.options}
+		  onChange={this.logChange}
+		/>
         {this.state.start}
 
 			</div>

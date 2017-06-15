@@ -10,12 +10,12 @@ import EditPage from './Components/EditPage/EditPage'
 import ImagePage from './Components/ImagePage/ImagePage'
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
-//import {HashRouter , Switch, Route} from "react-router-dom"
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import {HashRouter , Switch, Route} from "react-router-dom"
+//import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 ReactDOM.render((
 
-   <Router>
+   <HashRouter>
 	<Switch>
 	<Route exact path='/' component={Layout}/>
       <Route path='/bildernamn' component={Layout}/>
@@ -27,7 +27,7 @@ ReactDOM.render((
 	  <Route path='/Edit' component={EditPage}/>
 	  <Route path='/Images' component={ImagePage}/>
 		</Switch>
-  </Router>
+  </HashRouter>
 
 ), document.getElementById('app'))
 

@@ -5,13 +5,14 @@ import './Description.css';
 export default class Description extends React.Component {
 	constructor(props){
 		super(props)
-		this.lang  = props.lang
 		this.CV = props.CV
 		this.parseJson = this.parseJson.bind(this);
 	}
 	
 	
 	parseJson(){
+		console.log("PARSE")
+		console.log(this.CV)
 		var sections = [];
 		for (var key in this.CV) {
 			var value = this.CV[key];
