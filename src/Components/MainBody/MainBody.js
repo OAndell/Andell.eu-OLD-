@@ -6,6 +6,9 @@ import './MainBody.css';
 import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel'
 import {getImages} from "../networking/networking"
 
+/* 
+ Component that holds the central content of the mainpage. Side meny and header not included.
+*/
 
 export default class MainBody extends React.Component {
 	constructor(props){
@@ -16,12 +19,8 @@ export default class MainBody extends React.Component {
 		return "http://andell.eu/profileImages/"+ name +".jpg";
 	}
 	
-  render() {
-	var imageList = getImages();
-	
-
-
-    return(
+   	render() {
+	    return(
 			<div  className="bodyBackground">
 				<Container className="profileContainer">
 					<Row >
@@ -51,7 +50,7 @@ export default class MainBody extends React.Component {
 					</Row>
 				</Container>
 			</div>
-	);
-  }
+		);
+  	}
 }
 

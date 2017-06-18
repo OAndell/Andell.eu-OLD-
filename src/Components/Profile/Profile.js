@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './Profile.css';
 
-
+/*Small profile with text and picture.
+Avalible input: desc, image and icon */
 
 export default class Profile extends React.Component {
 	constructor(props){
@@ -12,12 +13,12 @@ export default class Profile extends React.Component {
 		this.icon = props.icon
 	}
 
-  render() { 
-    return(
+	render() {
+		return(
 			<div className="background">
-				<img src={this.image} className="profileImage"/>
-				<h2 className="name">{this.desc} <i className={this.icon}></i></h2>
+			<img src={this.image} className="profileImage"/>
+			<h2 className="name">{this.desc} <i className={this.icon}></i></h2>
 			</div>
-	);
-  }
+		);
+	}
 }

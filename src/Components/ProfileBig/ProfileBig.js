@@ -12,7 +12,6 @@ export default class ProfileBig extends React.Component {
 		this.location = props.location
 		this.linkdin = props.linkdin
 		this.github = props.github
-		this.displayGithub = this.displayGithub.bind(this);
 	}
 	
 	
@@ -31,8 +30,7 @@ export default class ProfileBig extends React.Component {
 	
 	
 	render() { 
-  
-    return(
+	    return(
 			<div className="profileBackground">
 				<img src={this.image} className="bigProfileImage"/>
 				<h1>{this.name}</h1>
@@ -46,11 +44,11 @@ export default class ProfileBig extends React.Component {
 				<table className="iconLinksHolder">
 					<tr>
 						<th>{this.displayGithub()}</th>
-						&nbsp;
+							&nbsp;
 						<th>{this.displayLinkedin()}</th>
-					</tr>
+						</tr>
 				</table>
 			</div>
-	);
-  }
+		);
+    }
 }

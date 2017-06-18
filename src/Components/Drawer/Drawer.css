@@ -25,8 +25,19 @@
   background: #bdc3c7;
 }
 
+.menu-item:hover{
+    transform: scale(1.05);
+}
+
 .menu-item{
 	color:var(--verylight);
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.1s;
+  transition-property: transform;
 }
 
 /* General sidebar styles */

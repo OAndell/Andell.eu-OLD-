@@ -26,7 +26,7 @@ ReactDOM.render((
 	  <Route path='/Maria' component={MariaLayout}/>
 	  <Route path='/Edit' component={EditPage}/>
 	  <Route path='/Images' component={ImagePage}/>
-		</Switch>
+	</Switch>
   </HashRouter>
 
 ), document.getElementById('app'))

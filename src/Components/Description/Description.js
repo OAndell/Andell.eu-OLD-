@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './Description.css';
 
+/*Component that holds the description. 
+Input: .JSON file containing the text*/
+
 export default class Description extends React.Component {
 	constructor(props){
 		super(props)
@@ -11,7 +14,6 @@ export default class Description extends React.Component {
 	
 	
 	parseJson(){
-		console.log("PARSE")
 		console.log(this.CV)
 		var sections = [];
 		for (var key in this.CV) {
@@ -32,12 +34,11 @@ export default class Description extends React.Component {
 		);
 	}
 	
-
   render() { 
     return(
-			<div className="resumeHolder">
-					{this.parseJson()}
-			</div>
+		<div className="resumeHolder">
+			{this.parseJson()}
+		</div>
 	);
   }
 }
