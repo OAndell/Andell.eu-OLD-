@@ -15,8 +15,8 @@ export default class OscarLayout extends React.Component {
 		this.state = {desc : <br/>}
 		this.getCV = this.getCV.bind(this);
 		this.getCV();
-    }	
-	
+    }
+
 	getCV(){
 		fetch(url, {mode: 'cors'})
 			.then(res => res.json())
@@ -28,11 +28,12 @@ export default class OscarLayout extends React.Component {
 				console.log(data);
 		}.bind(this));
 	}
-	
+
   render() {
 	var layoutStyle = {
 		backgroundImage: `url(${BackgroundImage})`,
-		height:'200vw',
+		backgroundRepeat: 'repeat',
+		paddingBottom:"100px",
 		positon: "absolute"
 	};
     return (
@@ -59,4 +60,3 @@ export default class OscarLayout extends React.Component {
 	);
   }
 }
- 

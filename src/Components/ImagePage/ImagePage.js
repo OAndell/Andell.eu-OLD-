@@ -13,8 +13,9 @@ export default class ImagePage extends React.Component {
 		var imageList = getImages();
 		var layoutStyle = {
 			backgroundImage: `url(${BackgroundImage})`,
-			height:'200vh',
-			positon: "absolute"
+			backgroundRepeat: 'repeat',
+			positon: "absolute",
+			paddingBottom:"100px"
 		};
 		return (
 			<div id ="outer-container">

@@ -14,7 +14,6 @@ import {HashRouter , Switch, Route} from "react-router-dom"
 //import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 ReactDOM.render((
-
    <HashRouter>
 	<Switch>
 	<Route exact path='/' component={Layout}/>

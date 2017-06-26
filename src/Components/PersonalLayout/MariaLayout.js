@@ -15,8 +15,8 @@ export default class MariaLayout extends React.Component {
 		this.state = {desc : <br/>}
 		this.getCV = this.getCV.bind(this);
 		this.getCV();
-    }	
-	
+    }
+
 	getCV(){
 		fetch(url, {mode: 'cors'})
 			.then(res => res.json())
@@ -31,7 +31,8 @@ export default class MariaLayout extends React.Component {
   render() {
 	var layoutStyle = {
 		backgroundImage: `url(${BackgroundImage})`,
-		height:'200vh',
+		backgroundRepeat: 'repeat',
+		paddingBottom:"100px",
 		positon: "absolute"
 	};
     return (
@@ -58,4 +59,3 @@ export default class MariaLayout extends React.Component {
 	);
   }
 }
- 

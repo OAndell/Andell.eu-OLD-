@@ -14,8 +14,8 @@ export default class StefanLayout extends React.Component {
 		this.state = {desc : <br/>}
 		this.getCV = this.getCV.bind(this);
 		this.getCV();
-    }	
-	
+    }
+
 	getCV(){
 		fetch(url, {mode: 'cors'})
 			.then(res => res.json())
@@ -27,12 +27,13 @@ export default class StefanLayout extends React.Component {
 				console.log(data);
 		}.bind(this));
 	}
-	
+
   render() {
 	var layoutStyle = {
 		backgroundImage: `url(${BackgroundImage})`,
-		height:'200vh',
-		positon: "absolute"
+		backgroundRepeat: 'repeat',
+		positon: "absolute",
+		paddingBottom:"100px"
 	};
     return (
       <div id ="outer-container">
@@ -58,4 +59,3 @@ export default class StefanLayout extends React.Component {
 	);
   }
 }
- 

@@ -9,11 +9,11 @@ import Drawer from '../../Components/Drawer/Drawer';
 
 export default class Layout extends React.Component {
 	render() {
-
 		var layoutStyle = {
 			backgroundImage: `url(${BackgroundImage})`,
-			height:'100vw',
-			positon: "absolute"
+			backgroundRepeat: 'repeat',
+			positon: "absolute",
+			paddingBottom:"100px"
 		};
 
 		return (
