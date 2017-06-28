@@ -33,7 +33,7 @@ export default class OscarLayout extends React.Component {
 	var layoutStyle = {
 		backgroundImage: `url(${BackgroundImage})`,
 		backgroundRepeat: 'repeat',
-		paddingBottom:"100px",
+		paddingBottom:"200px",
 		positon: "absolute"
 	};
     return (
