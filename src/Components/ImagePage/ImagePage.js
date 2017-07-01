@@ -15,8 +15,10 @@ export default class ImagePage extends React.Component {
 			backgroundImage: `url(${BackgroundImage})`,
 			backgroundRepeat: 'repeat',
 			positon: "absolute",
-			paddingBottom:"100px"
+			paddingBottom:"500px"
+
 		};
+		//<ImageCarousel images={imageList}/>
 		return (
 			<div id ="outer-container">
 				<Drawer/>
@@ -24,7 +26,6 @@ export default class ImagePage extends React.Component {
 					<div style={layoutStyle}>
 						<Header largeText = "Bildgalleri" smallText = ""/>
 						<div  className="bodyBackground">
-							<ImageCarousel images={imageList}/>
 						</div>
 					</div>
 				</main>

@@ -8,6 +8,7 @@ import AliceLayout from './Components/PersonalLayout/AliceLayout'
 import MariaLayout from './Components/PersonalLayout/MariaLayout'
 import EditPage from './Components/EditPage/EditPage'
 import ImagePage from './Components/ImagePage/ImagePage'
+import ShowcasePage from './Components/ShowcasePage/ShowcasePage'
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import {HashRouter , Switch, Route} from "react-router-dom"
@@ -25,6 +26,7 @@ ReactDOM.render((
 	  <Route path='/Maria' component={MariaLayout}/>
 	  <Route path='/Edit' component={EditPage}/>
 	  <Route path='/Images' component={ImagePage}/>
+	  <Route path='/Showcase' component={ShowcasePage }/>
 	</Switch>
   </HashRouter>
 

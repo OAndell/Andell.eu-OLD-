@@ -3,7 +3,6 @@ import ReactDOM from "react-dom"
 import Header from '../../Components/Header/Header';
 import Drawer from '../../Components/Drawer/Drawer';
 import BackgroundImage from '../../Resources/Backgrounds/background.png';
-import ImageCarousel from '../../Components/ImageCarousel/ImageCarousel'
 
 export default class EditPage extends React.Component {
 

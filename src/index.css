@@ -45,5 +45,12 @@ h2 > a{
   z-index: 1;
 }
 
+p > a{
+  text-decoration: none;
+  z-index: 1;
+  color: var(--light);
+}
+
+
 
 
