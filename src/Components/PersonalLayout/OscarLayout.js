@@ -7,6 +7,7 @@ import { Container, Row, Col } from 'react-grid-system';
 import './OscarLayout.css';
 import Profile from '../../Components/ProfileBig/ProfileBig';
 import Description from '../../Components/Description/Description';
+import OscarShowcase from '../../Components/OscarShowcase/OscarShowcase'
 var url = 'http://andell.eu/resume/oscarResume.json';
 
 export default class OscarLayout extends React.Component {
@@ -53,6 +54,10 @@ export default class OscarLayout extends React.Component {
 						</Col>
 					</Row>
 				</Container>
+				<hr className="profiledivider"/>
+				<Header largeText = "Showcase" smallText = "My Projects"/>
+				
+				<OscarShowcase/>
 			</div>
 		</div>
       </main>
