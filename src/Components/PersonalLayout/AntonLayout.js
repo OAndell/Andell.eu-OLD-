@@ -50,7 +50,7 @@ export default class AntonLayout extends React.Component {
 						<Col xl={4.1}>
 							<Profile image={"http://andell.eu/profileImages/anton.jpg"} name="Anton Andell" email="Anton@Andell.eu" location="Linköping, Sverige" />
 						</Col>
-						<Col xl={4.1}>
+						<Col xl={7.1}>
 							{this.state.desc}
 						</Col>
 					</Row>

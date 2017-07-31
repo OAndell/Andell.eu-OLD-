@@ -49,13 +49,13 @@ export default class OscarLayout extends React.Component {
 						<Col xl={4.1}>
 							<Profile image={"http://andell.eu/profileImages/oscar.jpg"} name="Oscar Andell" title="IT student" email="Oscar@Andell.eu" location="Linköping, Sweden" github="https://github.com/OAndell/" linkdin="https://www.linkedin.com/in/oscar-andell-156ba0138/"/>
 						</Col>
-						<Col xl={4.1}>
+						<Col xl={7.1}>
 							{this.state.desc}
 						</Col>
 					</Row>
 				</Container>
 				<hr className="profiledivider"/>
-				<Header largeText = "Showcase" smallText = "My Projects"/>
+				<h1>Showcase</h1>
 				
 				<OscarShowcase/>
 			</div>

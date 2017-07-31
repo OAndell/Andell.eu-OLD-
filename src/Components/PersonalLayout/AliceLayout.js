@@ -51,7 +51,7 @@ export default class AliceLayout extends React.Component {
 						<Col xl={4.1}>
 							<Profile image={"http://andell.eu/profileImages/alice.jpg"} name="Alice Andell" email="Alice@Andell.eu" location="Jönköping, Sverige" />
 						</Col>
-						<Col xl={4.1}>
+						<Col xl={7.1}>
 							{this.state.desc}
 						</Col>
 					</Row>

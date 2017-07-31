@@ -47,7 +47,7 @@ export default class MariaLayout extends React.Component {
 						<Col xl={4.1}>
 							<Profile image={"http://andell.eu/profileImages/maria.jpg"} name="Maria Andell" email="Maria@Andell.eu" location="Jönköping, Sverige" />
 						</Col>
-						<Col xl={4.1}>
+						<Col xl={7.1}>
 							{this.state.desc}
 						</Col>
 					</Row>

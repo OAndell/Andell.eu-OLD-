@@ -47,7 +47,7 @@ export default class StefanLayout extends React.Component {
 						<Col xl={4.1}>
 							<Profile image={"http://andell.eu/profileImages/stefan.jpg"} name="Stefan Andell" email="Stefan@Andell.eu" location="Jönköping, Sverige" />
 						</Col>
-						<Col xl={4.1}>
+						<Col xl={7.1}>
 							{this.state.desc}
 						</Col>
 					</Row>
