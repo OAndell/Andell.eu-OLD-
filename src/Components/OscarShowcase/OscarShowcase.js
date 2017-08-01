@@ -29,6 +29,7 @@ export default class MainBody extends React.Component {
 								<h3>Features:</h3>
 								<ul>
 									<p>
+									<li>View new decisions made by the parlament.</li>
 									<li>View the results of votes.</li>
 									<li>Sort by party.</li>
 									<li>Read new questions, motions and other documents put forward by the parties.</li>
@@ -36,6 +37,8 @@ export default class MainBody extends React.Component {
 								</ul>
 								<br/>
 								<p><a href="https://github.com/OAndell/Riksdagen">View on github</a></p>
+								<br/>
+								<p><a href="https://github.com/OAndell/Riksdagen/raw/master/download/app-debug.apk">Download for Android</a></p>
 						</div>
 					</Col>
 						<img className="showcaseImg" src="https://raw.githubusercontent.com/OAndell/Riksdagen/master/screenshots/questionExample1.png"/>
